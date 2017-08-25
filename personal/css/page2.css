@@ -1,0 +1,108 @@
+.item2 .controdution{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    z-index:10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.item2 .controdution>.jianjie{
+    margin:auto;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 .controdution>.jianjie>h2{
+    font-weight:700;
+}
+.item2 .controdution>.jianjie>.img{
+    width: 100px;
+    height:100px;
+    margin:15px 0;
+}
+.item2 .controdution>.jianjie>.img>img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+.item2 .controdution>.jianjie>p{
+    height:60px;
+    font-size: 16px;
+    margin:25px auto 50px;
+    /*text-overflow: ellipsis;
+    overflow: hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:3;   //在第几行加省略号
+    -webkit-box-orient:vertical;*/
+}
+.item2 .kuai{
+    width: 100%;
+    height:45%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    opacity: 0;
+}
+.item2 .kuai>.mokuai{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.item2 .kuai>.mokuai>li{
+    width: 25%;
+    height:100%;
+    float: left;
+    transition: all ease 0.5s;
+    text-align: center;
+    line-height: 350px;
+}
+.item2 .kuai>.mokuai>li:hover{
+    background: rgba(0,0,0,0.5);
+}
+.item2 .kuai>.mokuai>li>p{
+    font-size: 50px;
+    color:#49C9DE;
+}
+.item2 .kuai>.mokuai>li>canvas{
+    margin-top:20px;
+    opacity: 0;
+}
+.item2 .controdution>.hid{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    top:50%;
+    right:-9%;
+    transform: translate(0,-50%);
+    z-index:333;
+    transition: all 0.5s ease;
+}
+.item2 .controdution>.hid:hover{
+    right:0;
+}
+.item2 .controdution>.hid>a{
+    display: block;
+    width: 100%;
+    height:50px;
+    margin:15px 0;
+    font-size: 16px;
+    color: #49C9DE;
+    text-decoration: none;
+    border:1px solid #49C9DE;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.2s ease;
+}
+.item2 .controdution>.hid>a:hover{
+    background: rgba(255,255,255,0.5);
+}

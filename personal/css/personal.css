@@ -1,0 +1,113 @@
+@import "page1.css";
+@import "page2.css";
+@import "page3.css";
+@import "page4.css";
+@import "page5.css";
+@import "demo.css";
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: microsoft yahei, sans-serif;
+    color: #fff;
+}
+.section{
+    overflow: hidden;
+}
+.section .bg{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.section .bg>.mask{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    background: -webkit-linear-gradient(135deg, rgba(0,40,57,0.5), rgba(166,102,22,0.5));
+}
+.section .bg>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/************************导航条****************************/
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 333;
+}
+.navbar .container{
+    height: 100%;
+    margin:0 auto;
+    padding:0 15px;
+}
+.navbar .container>a{
+    text-decoration: none;
+    height: 50px;
+    padding: 15px 15px;
+    margin-left: -15px;
+    float: left;
+    line-height: 20px;
+    font-size: 18px;
+    color: #A7E615;
+}
+.navbar .container>.navRight{
+    float: right;
+}
+.navbar .container>.navRight>.rezame:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar .container>.navRight>.rezame>li{
+    float: left;
+}
+.navbar .container>.navRight>.rezame>.active{
+    background: #0F698A;
+}
+.navbar .container>.navRight>.rezame>li>a{
+    display: block;
+    width: 100%;
+    height:100%;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+/*******************************导航点******************************/
+#fp-nav{
+    top: 80%;
+}
+
+#fp-nav ul li{
+    vertical-align: middle;
+    margin: 10px 50px 0 ;
+}
+#fp-nav ul li a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url(../img/dot.png) 5px 5px no-repeat;
+}
+#fp-nav li .active {
+    background-position: 0 bottom;
+}
+#fp-nav span {
+    display: none;
+}

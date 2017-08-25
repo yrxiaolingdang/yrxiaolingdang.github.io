@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<section class="leftbar">
+    <h3>TODOLIST</h3>
+    <ul>
+        <li>查看待办事项</li>
+        <li>查看已完成事项</li>
+    </ul>
+</section>
+<div class="main">
+    <div class="container">
+        <div class="add">
+            <h3> 添加新的事项</h3>
+            <label>
+        <textarea autofocus id="text"></textarea>
+                <div class="notice">
+                    <span>00</span><span>/40</span>
+                </div>
+            </label>
+            <div class="bottom">
+                <input type="button" value="提交" id="submit" class="btn">
+                <input type="button" value="取消" class="cancle">
+            </div>
+        </div>
+        <div class="wait item">
+            <h3>未完成事项</h3>
+            <ul></ul>
+            <div class="bottom">
+                <input type="button" value="移动到已完成" class="movebtn btn">
+                <input type="button" value="添加" class="addbtn btn">
+            </div>
+        </div>
+        <div class="done item">
+            <h3>已完成</h3>
+            <ul>
+            </ul>
+            <div class="bottom">
+                <input type="button" value="移除" class="clearbtn btn">
+                <input type="button" value="添加" class="addbtn btn">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</html>

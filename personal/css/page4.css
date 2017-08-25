@@ -1,0 +1,63 @@
+.item4{
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg4.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.item4 .slide{
+    width: 100%;
+    height:100%;
+}
+.item4 .slide .container{
+    height:80%;
+    margin:0 auto;
+    padding:60px 35px;
+}
+.item4 .slide .container>.pic{
+    width: 100%;
+    height:100%;
+}
+.item4 h2{
+    font-weight:700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.item4 .slide .container>.pic>li{
+    float: left;
+    width: 280px;
+    height:200px;
+    margin:0 15px 15px 0;
+    /*background: blue;*/
+    display: none;
+}
+.item4 .slide .container>.pic>li>a{
+    display: block;
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+.item4 .slide .container>.pic>li>a>img{
+    width: 100%;
+    height:100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+.item4 .slide .container>.pic>li>a>.mask{
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+.item4 .slide .container>.pic>li>a>.mask>p{
+    font-size: 28px;
+    font-weight: 400;
+    margin:60px 0 15px;
+}

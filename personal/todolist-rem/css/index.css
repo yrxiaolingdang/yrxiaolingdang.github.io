@@ -1,0 +1,274 @@
+body,ul{
+    margin:0;padding:0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    margin:0;padding:0;
+    user-select: none;
+}
+input,p{
+    margin:0;padding:0;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 381963 */
+    src: url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.eot');
+    src: url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_381963_9oxabmyt46450zfr.svg#iconfont') format('svg');
+}
+.leftbar{
+    width: 100%;
+    height: 18%;
+    background: #333;
+    box-sizing: border-box;
+    padding:0.2rem 0.2rem;
+}
+.leftbar h3{
+    font-size: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+    height: 50%;
+    color:#fff;
+}
+.leftbar ul{
+    width: 100%;
+    height: 50%;
+    line-height: 0.4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.leftbar ul li{
+    font-size: 0.18rem;
+    color:#fff;
+}
+.leftbar ul li:first-child:before{
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: red;
+    float: left;
+    margin:0.1rem 0.1rem;
+}
+.leftbar ul li:last-child:before{
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: greenyellow;
+    float: left;
+    margin:0.1rem 0.1rem;
+}
+.main{
+    width: 100%;
+    height: 74%;
+    background: linear-gradient(to right, #c3fffc 0, #3efcff 60%,#c3fffc 100%);
+    position: relative;
+}
+.main .container{
+    width: 80%;
+    height:65%;
+    border:1px solid #fffa5f;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;bottom:0;
+    margin:auto;
+    background: #fff;
+    border-radius: 0.25rem;
+    border:3px solid #ccc;
+}
+.container .wait,.done{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+}
+.container .add{
+    width: 100%;
+    height: 100%;
+    padding-top: 0.34rem;
+    position: relative;
+}
+.container .add h3{
+    color: #333;
+    text-align: center;
+    margin:0.2rem;
+    font-size: 0.2rem;
+    font-weight: bold;
+    height: 0.3rem;
+}
+.container .add label{
+    width: 100%;
+    height:40%;
+    display: block;
+    margin:10px auto;
+    position:relative;
+}
+.container .add label textarea{
+     width: 85%;
+     height:100%;
+     display: block;
+     margin:10px auto;
+     font-size: 0.16rem;
+     resize: none;
+     padding:0.1rem;
+     box-sizing: border-box;
+ }
+.container .add label .notice{
+    width: 0.8rem;
+    height: 0.3rem;
+    position: absolute;
+    right:0;
+    bottom:0;
+    line-height: 0.3rem;
+    color: #333;
+    font-size: 0.2rem;
+}
+.notice span{
+    font-size: 0.2rem;
+}
+
+.btn{
+    width: 1.2rem;
+    height: 0.3rem;
+    display: block;
+    border: none;
+    margin: 0.2rem auto;
+    background:#cc75bf;
+    font-size: 0.16rem;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+.btn:active{
+    background: orange;
+    box-shadow: 0 0 5px #333;
+    color: #aaa;
+    outline: none;
+    opacity: 0.8;
+}
+
+.container .add .close{
+    position: absolute;
+    right: 0.3rem;
+    top:0.3rem;
+    font-family:"iconfont";
+    cursor: pointer;
+    font-size: 0.3rem;
+}
+.item h3{
+    text-align: center;
+    color: #333;
+    margin:0.2rem;
+    height: 5%;
+    position: relative;
+    font-size: 0.2rem;
+}
+.item h3 i{
+    position: absolute;
+    width: 0.2rem;
+    height:15%;
+    right:0.2rem;
+    font-family: "iconfont";
+}
+.item ul{
+    width:100%;
+    height: 60%;
+    background: #ccc;
+    overflow: auto;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+}
+.item ul li{
+    width: 100%;
+    height: 0.3rem;
+    box-sizing: border-box;
+}
+.item ul li input{
+    float: left;
+    width: 5%;
+    margin: 0.07rem;
+    cursor: pointer;
+}
+.item ul li p{
+    width: 30%;
+    height: 100%;
+    float: left;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.16rem;
+}
+.item ul li time{
+    width: 50%;
+    height: 100%;
+    line-height: 30px;
+    float: left;
+    font-size: 0.14rem;
+}
+.item ul li time i{
+    font-family: "iconfont";
+    font-size: 0.2rem;
+    font-style: normal;
+    line-height: 30px;
+    display: block;
+    float: left;
+}
+.item ul li>i{
+    float: left;
+    font-style:normal;
+    font-family: "iconfont";
+    width: 8%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 0.2rem;
+}
+.item ul li>i.active{
+    color:orange;
+}
+.item .bottom{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item .bottom .btn{
+    margin:0;
+}
+.item .bottom .addbtn{
+    background:#cc75bf;
+}
+.item .bottom .movebtn{
+    background:#cc75bf;
+}
+.item .bottom .clearbtn{
+    background:#cc75bf;
+}
+.bottombar{
+    width: 100%;
+    height: 8%;
+    background: #333;
+    text-align: center;
+    font-size: 0.18rem;
+    color:#fff;
+    line-height: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
